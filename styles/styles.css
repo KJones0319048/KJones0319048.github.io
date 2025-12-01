@@ -8,17 +8,24 @@ body { background-color: #2f4f4f;
 		   color: #330000;
 		   box-shadow: 5px 5px 5px #000000;
 }
-h1 { background-image: url(images/logo.gif);
-     background-repeat: no-repeat;
-     background-color: #9370DB;
-	 height: 110px;
+h1 { background-color: #9370DB;
+	 height: 160px;
 	 font-family: Georgia, "Times New Roman", serif;
-	 font-size: 4.5em;
-     padding-left: 220px;
+	 font-size: 4em;
+     padding-left: 20px;
 	 padding-top: 20px;
+	 line-height: 130px;
 	 text-shadow: 3px 3px 3px #db9370;
 	 margin-bottom: 0;
 }
+
+header img {
+	 float: left;
+	 height: 150px;
+	 margin-right: 15px;
+	 padding: 5px;
+}
+
 nav { padding-top: 10px;
       float: left;
       width: 200px; 
