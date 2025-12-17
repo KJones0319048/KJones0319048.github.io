@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Krista's Kafé BnB / Contacts</title>		<!--updated business name-->
+<meta charset="utf-8">
+<link href="styles/styles.css" rel="stylesheet">
+<meta name="description" content="Krista's Kafe BnB - A cozy cafe themed bed and breakfast.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div id="wrapper">
+  <header>
+	  <img src="images/kkbnb_logo.png" alt="Krista's Kafe BnB Logo">
+  
+      <h1>Krista's Kafé BnB</h1>		<!--updated business name-->
+  </header>
+  <nav>
+  <ul> 
+    <li><a href="index.html">Home</a></li>		<!--changed href's to work-->
+	<li><a href="rooms/latte_suite.html">Latte Suite</a></li>
+	<li><a href="rooms/espresso_room.html">Espresso Room</a></li>
+	<li><a href="events/kafe_events.html">Kafé Events</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+<main>
+  <h3>Contact Us to Book a Stay!</h3>
+  <p>Ready to relax? Fill out the form below to request a reservation.</p>
+  
+  <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+      <p>
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="First&nbsp;name" required>
+      </p>
+	  
+	  <p>
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="Last&nbsp;name" required>
+      </p>
+
+      <p>
+        <label for="myemail">Email:</label><br>
+        <input type="email" id="myemail" name="My&nbsp;email" required>
+      </p>
+
+      <p>
+        <label for="room">Preferred Room:</label><br>
+        <select id="room" name="Room">
+            <option value="Latte">Latte Suite</option>
+            <option value="Espresso">Espresso Room</option>
+        </select>
+      </p>
+	  
+	  <p>
+        <label for="staylength">Length of Stay:</label><br>
+        <select id="staylength" name="Stay&nbsp;Length">
+            <option value="1day">One Night - $125</option>
+            <option value="2day">Two Nights - $250</option>
+			<option value="3day">Three Nights - $375</option>
+            <option value="4day">Four Nights - $500</option>
+			<option value="5day">Five Nights - $550</option>
+        </select>
+      </p>
+
+      <p>
+        <label>Extras:</label><br>
+        <input type="checkbox" id="breakfast" name="Breakfast" value="yes">
+        <label for="breakfast">Include Daily Breakfast</label>
+      </p>
+	  
+	  <p>
+        <input type="checkbox" id="latteclass" name="Latte&nbsp;art&nbsp;class:" value="yes">
+        <label for="latteclass">Latte art class (complimentary with 2 night stay or longer)</label>
+      </p>
+      
+      <p>
+        <label for="comments">Special Requests:</label><br>
+        <textarea id="comments" name="Comments" rows="4" cols="30"></textarea>
+      </p>
+
+      <p>
+          <input type="submit" value="Submit Request">
+          <input type="reset" value="Clear Form">
+      </p>
+  </form>
+</main>
+  <footer>
+	Copyright &copy; 2025<br>
+	<a href="mailto:k0319048@amarillocollege.com">Krista Jones</a>		<!--updated copyright and added email-->
+  </footer>
+</div>
+</body>
+</html>
