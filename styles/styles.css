@@ -47,7 +47,7 @@ main { background-color: #dfa8d0;
           margin-left: 200px;
           padding: 1px 20px 20px 20px;   
 		  min-height: 300px;
-		  overflow: auto;
+		  overflow: hidden;
 }
 
 
@@ -66,7 +66,7 @@ main { background-color: #dfa8d0;
 }
 
 main img { float: right;
-              padding: 20px;
+           padding: 20px;
 }
 
 footer { background-color: #dfa8d0;
@@ -76,7 +76,117 @@ footer { background-color: #dfa8d0;
 	   font-size: small;
 	   font-style: italic;
 }
-	  
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Slideshow stuff */
+
+img {
+		vertical-align: middle;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+		max-width: 900px;
+		position: relative;
+		margin: 20px auto;
+		width: 100%;
+		display: block;
+		overflow: hidden;
+}
+
+.someSlides {
+		display: none;
+}
+
+.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		background-color: rgba(0,0,0,0.3);
+		text-decoration: none;
+}
+
+.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(0,0,0,0.5);
+}
+
+.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+}
+
+.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 10px 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+		background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* media query stuff */
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px}
+}
+
 @media only screen and (max-width: 1024px) {
     nav {
         float: none;
@@ -84,6 +194,13 @@ footer { background-color: #dfa8d0;
         text-align: center;
     }
     
+	main {
+        padding-left: 20px;
+        padding-right: 20px;
+        clear: both;
+        display: block;
+    }
+	
     main {
         margin-left: 0;
     }
@@ -96,15 +213,16 @@ footer { background-color: #dfa8d0;
         float: none;
         display: block;
         margin: 0 auto;
+		max-width: 85%;
+		height: auto;
     }
 
     h1 {
-        font-size: 3.5em;
+        font-size: clamp(2.5rem, 10vw, 5rem);
         text-align: center;
         padding-left: 0;
         line-height: 140px;
         height: auto;
-        padding-bottom: 20px;
     }
     
     main img {

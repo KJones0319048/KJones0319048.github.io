@@ -6,6 +6,7 @@
 <link href="../styles/styles.css" rel="stylesheet">
 <meta name="description" content="Krista's Kafe BnB - A cozy cafe themed bed and breakfast.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../styles/js/carousel.js" defer></script>
 
 </head>
 <body>
@@ -20,7 +21,7 @@
     <li><a href="../index.html">Home</a></li>
 	<li><a href="../rooms/latte_suite.html">Latte Suite</a></li>
 	<li><a href="../rooms/espresso_room.html">Espresso Room</a></li>
-	<li><a href="events/kafe_events.html">Kafé Events</a></li>
+	<li><a href="kafe_events.html">Kafé Events</a></li>
 	<li><a href="../contact.html">Contact</a></li>
   </ul>
   </nav>
@@ -29,13 +30,11 @@
   
 	<p>Join us every weekend for special events, from latte art classes to evening fireside concerts. Relax and meet new friends during your stay!</p>
   
-	<h4>Main Event: Latte Art Class</h4>
-	<img src="../images/latte_art.png" alt="Close-up of a person pouring milk foam into a cup to create latte art." width="250">
-	<p>Learn the secrets to pouring perfect hearts and flowery designs with our professional barista. This popular, hands-on class is included with any stay lasting 2 nights or longer.</p>
-  
 	<h4>Evening Concert Weekends</h4>
 	<p>Enjoy local musicians performing acoustic sets by the fireplace every Saturday night (7:00 PM - 9:00 PM). Complimentary coffee and desserts are served.</p>
-  
+  	
+	<img src="../images/fireplace_music.png" alt="A cozy fireplace with a guitar leaning against the wall" class="responsive-img">
+	
 	<h4>This Weekend's Schedule:</h4>
 	<ol>
 		<li><strong>Friday Evening:</strong> Welcome party with spiced coffee and pastries (5:00 PM)</li>
@@ -43,9 +42,50 @@
 		<li><strong>Saturday Evening:</strong> Acoustic Guitarists (7:00 PM)</li>
 	</ol>
 	
-	<img src="../images/fireplace_music.png" alt="A cozy fireplace with a guitar leaning against the wall" width="250">
+	<h4>Main Event: Latte Art Class</h4>
+	<img src="../images/latte_art.png" alt="Close-up of a person pouring milk foam into a cup to create latte art." class="responsive-img">
+	<p>Learn the secrets to pouring latte art, from perfect hearts and flowery designs to animals with our professional barista. This popular, hands-on class is included with any stay lasting 2 nights or longer.</p>
+
+  
+	<div class="slideshow-container">
+		
+		<div class="someSlides fade">
+			<div class="numbertext">1 / 4</div>
+			<img src="../images/raccoon_art.jpg" alt="Raccoon latte art" style="width:100%">
+			<div class="text">Raccoon latte art</div>
+		</div>
+
+		<div class="someSlides fade">
+			<div class="numbertext">2 / 4</div>
+			<img src="../images/ferret_art.png" alt="Ferret latte art" style="width:100%">
+			<div class="text">Ferret latte art</div>
+		</div>
+
+		<div class="someSlides fade">
+			<div class="numbertext">3 / 4</div>
+			<img src="../images/opossum_art.png" alt="Opossum latte art" style="width:100%">
+			<div class="text">Opossum latte art</div>
+		</div>
+		
+		<div class="someSlides fade">
+			<div class="numbertext">4 / 4</div>
+			<img src="../images/cat_art.png" alt="Cat latte art" style="width:100%">
+			<div class="text">Cat latte art</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	</div>
   
   </main>
+	
   <footer>
 	Copyright &copy; 2025<br>
 	<a href="mailto:k0319048@amarillocollege.com">Krista Jones</a>		<!--updated copyright and added email-->
